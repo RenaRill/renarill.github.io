@@ -1,0 +1,124 @@
+<!DOCTYPE html> <!-- Тип документа для браузера -->
+<html lang="ru">
+
+<head> <!-- Вся техническая информация о странице -->
+  <meta charset="UTF-8"> <!-- Кодировка страницы -->
+  <meta name="viewport" content="width=device-width, initialscale=1.0">
+  <!-- Для красивого отображения на мобильных устройствах -->
+  <title>Ювелирный магазин</title> <!-- Заголовок страницы -->
+  <link rel="icon" type="image/png" href="#"> <!-- Фавиконка -->
+  <link rel="stylesheet" href="#">
+  <!-- Ссылка на внешний файл стилей для оформления страницы -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Ссылки для предварительного установления соединения с сервером шрифтов Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main_style.css">
+  <link rel="stylesheet" href="styles/aboutus_style.css">
+  <link rel="stylesheet" href="styles/hamburger.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <!-- Ссылка на файл шрифтов Google для использования шрифта Cormorant -->
+  <script src="https://kit.fontawesome.com/00752a6e98.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <div class="logo"><a href="index.html"><img src="Images/Logo.png" alt="Логотип"></a></div>
+    <nav class="menu">
+      <ul>
+        <li><a href="catalogue.html" class="menu-link">Каталог</a>
+        <li><a href="sales.html" class="menu-link">Акции</a>
+        <li><a href="aboutus.html" class="menu-link">О нас</a>
+      </ul>
+    </nav>
+    <div class="menu-icons">
+      <a href="signin.html"><img class="icon" src="Images/AuthorizationIcon.png" alt="Вход в аккаунт" width="26px"
+          height="26px"></a>
+      <a href="shoppingcart.html"><img class="icon" src="Images/ShoppingCartIcon.png" alt="Корзина товаров" width="26px"
+          height="26px"></a>
+    </div>
+    <div class="contact">
+      <p><a href="tel:+79259914090">+7 (925) 991-40-90</a></p>
+    </div>
+  </header>
+  <div class="page-notification">
+    <span class="close-button" onclick="closeNotification()"><i class="fa-regular fa-circle-xmark"></i></span>
+    <h2>Уведомление</h2>
+    <p>С 05.12 до 05.02 мы приглашаем вас на мастер-класс по созданию украшений, для получения подробной информации
+      свяжитесь с нами в соцсетях или по телефону</p>
+  </div>
+  <div class="aboutus_body">
+    <p class="path"><a href="index.html">Главная</a> / О нас</p>
+    <h2>О НАС</h2>
+    <p class="aboutintro">Наша миссия сохранить семейные воспоминания через поколения.</p>
+    <p>История ювелирного завода «Грант» начинается с 1999 года, когда Станислав Мазурчик открыл свою ювелирную
+      мастерскую. В дальнейшем она стала фундаментом, на котором строился лидер Санкт-Петербурга по выпуску изделий
+      с бриллиантами.</p>
+    <img src="Images/aboutus.png">
+    <p>В 2000 году был основан Ювелирный Бренд «Grant», который на данный момент сотрудничает с большим количеством
+      магазинов России, а также стран СНГ. Ориентированность на клиента дала возможность завоевать доверие и до сих пор
+      позволяет привлекать новых покупателей.<br><br>
+
+      Основная цель завода «Грант» – создание семейных традиций. Мы стремимся
+      к тому, чтобы наши изделия передавались из поколения в поколение.
+      Добиваемся мы этого путем создания актуальных моделей, с использованием высококачественных материалов, сохраняя
+      при этом конкурентную стоимость продукции.<br><br>
+
+      Очень просто выпускать массовый товар, не задумываясь о его судьбе
+      в перспективе, но это не наша политика. Мы настолько уверены в своих изделиях, что даем Вам гарантию на весь срок
+      службы продукта, что подтверждено «Сертификатом качества изделия».
+    </p>
+  </div>
+  <footer class="footer">
+    <div class="footer_container">
+      <div class="sec">
+        <h3>ИНФОРМАЦИЯ</h3>
+        <ul>
+          <li><a href="catalogue.html">Каталог</a></li>
+          <li><a href="sales.html">Акции</a></li>
+          <li><a href="aboutus.html">О компании</a></li>
+        </ul>
+      </div>
+      <div class="sec">
+        <h3>СВЯЖИТЕСЬ С НАМИ</h3>
+        <ul class="info">
+          <li>
+            <p><span><i class="fa fa-map-marker" aria-hidden="true"></i></span> 14 Tverskaya Street<br>Moscow, Russia
+            </p>
+          </li>
+          <li>
+            <p><span><i class="fa fa-phone" aria-hidden="true"></i></span><a href="tel:+79259914090"> +7 (925) 991
+                40-90</a>
+            </p>
+          </li>
+          <li>
+            <p><span><i class="fa fa-envelope" aria-hidden="true"></i></span><a href="mailto:cyralen@gmail.com">
+                cyralen@gmail.com</a></p>
+          </li>
+        </ul>
+      </div>
+      <div class="sec">
+        <h3>МЫ В СОЦСЕТЯХ:</h3>
+        <div class="social_links">
+          <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+          <a href="https://t.me/renarill"><i class="fab fa-telegram"></i></a>
+          <a href="https://vk.com/renarill"><i class="fab fa-vk"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © Кириллова А.В., 3 семестр, для МИРЭА 2023.</p>
+    </div>
+  </footer>
+  <script src="js/burger_script.js"></script>
+  <script src="js/notification.js"></script>
+</body>
+
+</html>

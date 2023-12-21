@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initialscale=1.0">
+  <title>Ювелирный магазин</title> <!--Изменить название-->
+  <link rel="icon" type="image/png" href="#"> <!--Вставить фавиконку-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/hamburger.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/main_style.css">
+  <script src="https://kit.fontawesome.com/00752a6e98.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <div class="logo"><a href="index.html"><img src="Images/Logo.png" alt="Логотип"></a></div>
+    <nav class="menu">
+      <ul>
+        <li><a href="catalogue.html" class="menu-link">Каталог</a>
+        <li><a href="sales.html" class="menu-link">Акции</a>
+        <li><a href="aboutus.html" class="menu-link">О нас</a>
+      </ul>
+    </nav>
+    <div class="menu-icons">
+      <a href="signin.html"><img class="icon" src="Images/AuthorizationIcon.png" alt="Вход в аккаунт" width="26px"
+          height="26px"></a>
+      <a href="shoppingcart.html"><img class="icon" src="Images/ShoppingCartIcon.png" alt="Корзина товаров" width="26px"
+          height="26px"></a>
+    </div>
+    <div class="contact">
+      <p><a href="tel:+79259914090">+7 (925) 991-40-90</a></p>
+    </div>
+  </header>
+  <div class="introduction">
+    <h1>Украшения, которые<br>прослужат вам <i>всю жизнь</i></h1>
+    <p>Наша цель - сохранить семейные традиции
+      путем создания ювелирных украшений с использованием высококачественных материалов.
+    </p>
+    <button class="button" onclick="redirectTo('catalogue.html')">Смотреть каталог</button>
+  </div>
+
+  <div class="sales">
+    <h3>АКЦИИ</h3>
+    <p class="description">
+      Ознакомьтесь с актуальными акциями и специальными предложениями. Здесь каждый найдет для себя
+      что-то стоящее.
+    </p>
+    <div class="sales-banner">
+      <div class="slides">
+        <img src="Images/salesimg.png" alt="Изображение для акции">
+        <div class="text-banner">
+          <p>Подвеска с бриллиантом в подарок при покупке от 15 000₽*</p>
+          <button class="button" onclick="redirectTo('catalogue.html')">Смотреть каталог</button>
+          <p class="note">*Сроки проведения акции ограничены</p>
+        </div>
+
+      </div>
+      <div class="slides">
+        <img src="Images/salesimg2.png" alt="Изображение для акции">
+        <div class="text-banner">
+          <p>Браслет на выбор при покупке от 3 изделий нашей новой коллекции*</p>
+          <button class="button" onclick="redirectTo('catalogue.html')">Смотреть коллекцию</button>
+          <p class="note">*Сроки проведения акции ограничены</p>
+
+        </div>
+      </div>
+      <div class="slides">
+        <img src="Images/salesimg3.png" alt="Изображение для акции">
+        <div class="text-banner">
+          <p>Акция 1+1=3 на более чем 20 позиций*</p>
+          <button class="button" onclick="redirectTo('catalogue.html')">Смотреть каталог</button>
+          <p class="note">*Сроки проведения акции ограничены</p>
+
+        </div>
+      </div>
+      <div id="dot">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="categories">
+    <div class="rectangle"></div>
+    <h3>ПОПУЛЯРНЫЕ КАТЕГОРИИ</h3>
+    <div class="category">
+      <div class="category1">
+        <div class="image-container">
+          <img src="Images/earrings.png" alt="Серьги">
+          <div class="cat">
+            <p>Серьги</p>
+          </div>
+        </div>
+        <p class="descript">
+          Серьги нашего производства имеют множество преимуществ.
+          <br><br>
+          Например, мы запаиваем и шлифуем шарниры на замках, что позволяет носить наши серьги многие годы без поломок.
+          <br><br>
+          Выберите свою пару в каталоге.
+        </p>
+        <button class="button" onclick="redirectTo('catalogue.html')">Выбрать серьги</button>
+      </div>
+      <div class="category2">
+        <div class="image-container">
+          <img src="Images/ring.png" alt="Кольца">
+          <div class="cat">
+            <p>Кольца</p>
+          </div>
+        </div>
+        <p class="descript">
+          Помимо красоты, наши кольца невероятно удобны в носке.
+          <br><br>
+          Мы заботимся о том, чтобы вам было максимально комфортно носить изделия нашего производства.
+          <br><br>
+          Найдите свое идеальное кольцо в каталоге.
+        </p>
+        <button class="button" onclick="redirectTo('catalogue.html')">Выбрать кольцо</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  <footer class="footer">
+    <div class="footer_container">
+      <div class="sec">
+        <h3>ИНФОРМАЦИЯ</h3>
+        <ul>
+          <li><a href="catalogue.html">Каталог</a></li>
+          <li><a href="sales.html">Акции</a></li>
+          <li><a href="aboutus.html">О компании</a></li>
+        </ul>
+      </div>
+      <div class="sec">
+        <h3>СВЯЖИТЕСЬ С НАМИ</h3>
+        <ul class="info">
+          <li>
+            <p><span><i class="fa fa-map-marker" aria-hidden="true"></i></span> 14 Tverskaya Street<br>Moscow, Russia
+            </p>
+          </li>
+          <li>
+            <p><span><i class="fa fa-phone" aria-hidden="true"></i></span><a href="tel:+79259914090"> +7 (925) 991
+                40-90</a>
+            </p>
+          </li>
+          <li>
+            <p><span><i class="fa fa-envelope" aria-hidden="true"></i></span><a href="mailto:cyralen@gmail.com">
+                cyralen@gmail.com</a></p>
+          </li>
+        </ul>
+      </div>
+      <div class="sec">
+        <h3>МЫ В СОЦСЕТЯХ:</h3>
+        <div class="social_links">
+          <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+          <a href="https://t.me/renarill"><i class="fab fa-telegram"></i></a>
+          <a href="https://vk.com/renarill"><i class="fab fa-vk"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © Кириллова А.В., 3 семестр, для МИРЭА 2023.</p>
+    </div>
+  </footer>
+  <script src="js/burger_script.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/redirect_to.js"></script>
+</body>
+
+</html>

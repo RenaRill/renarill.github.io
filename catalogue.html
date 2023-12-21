@@ -1,0 +1,337 @@
+<!DOCTYPE html> <!-- Тип документа для браузера -->
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initialscale=1.0">
+  <title>Ювелирный магазин</title> <!--Изменить название-->
+  <link rel="icon" type="image/png" href="#"> <!--Вставить фавиконку-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/hamburger.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/catalogue_style.css">
+  <script src="https://kit.fontawesome.com/00752a6e98.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <div class="logo"><a href="index.html"><img src="Images/Logo.png" alt="Логотип"></a></div>
+    <nav class="menu">
+      <ul>
+        <li><a href="catalogue.html" class="menu-link">Каталог</a>
+        <li><a href="sales.html" class="menu-link">Акции</a>
+        <li><a href="aboutus.html" class="menu-link">О нас</a>
+      </ul>
+    </nav>
+    <div class="menu-icons">
+      <a href="signin.html"><img class="icon" src="Images/AuthorizationIcon.png" alt="Вход в аккаунт" width="26px"
+          height="26px"></a>
+      <a href="shoppingcart.html"><img class="icon" src="Images/ShoppingCartIcon.png" alt="Корзина товаров" width="26px"
+          height="26px"></a>
+    </div>
+    <div class="contact">
+      <p><a href="tel:+79259914090">+7 (925) 991-40-90</a></p>
+    </div>
+  </header>
+  <div class="main">
+    <div class="cat_intro">
+      <img class="banner" src="Images/cat_banner.jpg" alt="Пример украшений" max-width="1150px" height="262px">
+      <p class="path"><a href="index.html">Главная</a> / Каталог</p>
+      <h2>Каталог</h2>
+      <p>Ювелирный завод «Грант» предлагает вашему вниманию большой выбор ювелирных украшений от производителя.
+        <br><br>
+        В нашем каталоге вы можете найти эксклюзивные украшения из «Фирменной коллекции», недорогие кольца и серьги с
+        бриллиантом, самые новые украшения и многое другое. Технологически совершенные изделия для удобного
+        повседневного
+        использования. Все наши изделия сопровождаются сертификатом качества, пожизненной гарантией и стильной
+        подарочной
+        упаковкой.
+      </p>
+    </div>
+    <div class="shop_list">
+      <div class="buttons" id="buttons">
+        <button class="button-value" onclick="filterProduct('Всё')">Всё</button>
+        <button class="button-value" onclick="filterProduct('Кольца')">Кольца</button>
+        <button class="button-value" onclick="filterProduct('Колье')">Колье</button>
+        <button class="button-value" onclick="filterProduct('Браслеты')">Браслеты</button>
+        <button class="button-value" onclick="filterProduct('Серьги')">Серьги</button>
+      </div>
+      <div class="catalogue">
+        <div class="list" id="list">
+          <div class="card" data-type="Кольца" data-name="Кольцо из золота" data-price="35310"
+            data-image="Images/Catalogue_items/r1.png">
+            <div class="card_content">
+              <img src="Images/Catalogue_items/r1.png" alt="Изображение украшения">
+              <p class="name">Кольцо из золота</p>
+              <p class="price">35 310 ₽</p>
+              <button class="button" onclick="addToCart(this)">Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="card" data-type="Кольца" data-name="Кольцо из золота" data-price="4100"
+            data-image="Images/Catalogue_items/r2.jpg">
+            <div class="card_content">
+              <img src="Images/Catalogue_items/r2.jpg" alt="Изображение украшения">
+              <p class="name">Кольцо из золота</p>
+              <p class="price">4 100 ₽</p>
+              <button class="button" onclick="addToCart(this)">Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="card" data-type="Браслеты" data-name="Браслет из золота" data-price="16310"
+            data-image="Images/Catalogue_items/b1.jpg">
+            <div class="card_content">
+              <img src="Images/Catalogue_items/b1.jpg" alt="Изображение украшения">
+              <p class="name">Браслет из золота</p>
+              <p class="price">16 310 ₽</p>
+              <button class="button" onclick="addToCart(this)">Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="card" data-type="Колье" data-name="Колье из золота" data-price="38580"
+            data-image="Images/Catalogue_items/k1.jpg">
+            <div class="card_content">
+              <img src="Images/Catalogue_items/k1.jpg" alt="Изображение украшения">
+              <p class="name">Колье из золота</p>
+              <p class="price">38 580 ₽</p>
+              <button class="button" onclick="addToCart(this)">Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="card" data-type="Браслеты" data-name="Браслет из золота" data-price="7310"
+            data-image="Images/Catalogue_items/b2.jpeg">
+            <div class="card_content">
+              <img src="Images/Catalogue_items/b2.jpeg" alt="Изображение украшения">
+              <p class="name">Браслет из золота</p>
+              <p class="price">7 310 ₽</p>
+              <button class="button" onclick="addToCart(this)">Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="card" data-type="Браслеты" data-name="Браслет из белого золота" data-price="46370"
+            data-image="Images/Catalogue_items/b3.jpeg">
+            <div class="card_content">
+              <img src="Images/Catalogue_items/b3.jpeg" alt="Изображение украшения">
+              <p class="name">Браслет из белого золота</p>
+              <p class="price">46 370 ₽</p>
+              <button class="button" onclick="addToCart(this)">Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="card" data-type="Серьги" data-name="Серьги из золота" data-price="93310"
+            data-image="Images/Catalogue_items/s1.jpg">
+            <div class="card_content">
+              <img src="Images/Catalogue_items/s1.jpg" alt="Изображение украшения">
+              <p class="name">Серьги из золота</p>
+              <p class="price">93 310 ₽</p>
+              <button class="button" onclick="addToCart(this)">Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="card" data-type="Серьги" data-name="Серьги из золота" data-price="74400"
+            data-image="Images/Catalogue_items/s2.jpg">
+            <div class="card_content">
+              <img src="Images/Catalogue_items/s2.jpg" alt="Изображение украшения">
+              <p class="name">Серьги из золота</p>
+              <p class="price">74 400 ₽</p>
+              <button class="button" onclick="addToCart(this)">Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="card" data-type="Серьги" data-name="Серьги из золота" data-price="22600"
+            data-image="Images/Catalogue_items/s3.jpg">
+            <div class="card_content">
+              <img src="Images/Catalogue_items/s3.jpg" alt="Изображение украшения">
+              <p class="name">Серьги из золота</p>
+              <p class="price">22 600 ₽</p>
+              <button class="button" onclick="addToCart(this)">Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="card" data-type="Браслеты" data-name="Браслет из золота" data-price="30300"
+            data-image="Images/Catalogue_items/b4.jpeg">
+            <div class="card_content">
+              <img src="Images/Catalogue_items/b4.jpeg" alt="Изображение украшения">
+              <p class="name">Браслет из золота</p>
+              <p class="price">30 300 ₽</p>
+              <button class="button" onclick="addToCart(this)">Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="card" data-type="Серьги" data-name="Серьги из золота" data-price="35310"
+            data-image="Images/Catalogue_items/s4.jpg">
+            <div class="card_content">
+              <img src="Images/Catalogue_items/s4.jpg" alt="Изображение украшения">
+              <p class="name">Серьги из золота</p>
+              <p class="price">35 310 ₽</p>
+              <button class="button" onclick="addToCart(this)">Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="card" data-type="Серьги" data-name="Серьги из серебра" data-price="35300"
+            data-image="Images/Catalogue_items/s5.jpg">
+            <div class="card_content">
+              <img src="Images/Catalogue_items/s5.jpg" alt="Изображение украшения">
+              <p class="name">Серьги из серебра</p>
+              <p class="price">35 300 ₽</p>
+              <button class="button" onclick="addToCart(this)">Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="card" data-type="Кольца" data-name="Кольцо из белого золота" data-price="47200"
+            data-image="Images/Catalogue_items/r3.jpg">
+            <div class="card_content">
+              <img src="Images/Catalogue_items/r3.jpg" alt="Изображение украшения">
+              <p class="name">Кольцо из белого золота</p>
+              <p class="price">47 200 ₽</p>
+              <button class="button" onclick="addToCart(this)">Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="card" data-type="Серьги" data-name="Серьги из серебра" data-price="93000"
+            data-image="Images/Catalogue_items/s6.jpg">
+            <div class="card_content">
+              <img src="Images/Catalogue_items/s6.jpg" alt="Изображение украшения">
+              <p class="name">Серьги из серебра</p>
+              <p class="price">93 000 ₽</p>
+              <button class="button" onclick="addToCart(this)">Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="card" data-type="Кольца" data-name="Кольцо из золота" data-price="12900"
+            data-image="Images/Catalogue_items/r4.jpg">
+            <div class="card_content">
+              <img src="Images/Catalogue_items/r4.jpg" alt="Изображение украшения">
+              <p class="name">Кольцо из золота</p>
+              <p class="price">12 900 ₽</p>
+              <button class="button" onclick="addToCart(this)">Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="card" data-type="Серьги" data-name="Серьги из серебра" data-price="5100"
+            data-image="Images/Catalogue_items/s7.jpg">
+            <div class="card_content">
+              <img src="Images/Catalogue_items/s7.jpg" alt="Изображение украшения">
+              <p class="name">Серьги из серебра</p>
+              <p class="price">5 100 ₽</p>
+              <button class="button" onclick="addToCart(this)">Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="card" data-type="Кольца" data-name="Кольцо из золота" data-price="36440"
+            data-image="Images/Catalogue_items/r5.jpg">
+            <div class="card_content">
+              <img src="Images/Catalogue_items/r5.jpg" alt="Изображение украшения">
+              <p class="name">Кольцо из золота</p>
+              <p class="price">36 440 ₽</p>
+              <button class="button" onclick="addToCart(this)">Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="card" data-type="Серьги" data-name="Серьги из серебра" data-price="3700"
+            data-image="Images/Catalogue_items/s8.jpg">
+            <div class="card_content">
+              <img src="Images/Catalogue_items/s8.jpg" alt="Изображение украшения">
+              <p class="name">Серьги из серебра</p>
+              <p class="price">3 700 ₽</p>
+              <button class="button" onclick="addToCart(this)">Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="card" data-type="Колье" data-name="Колье из золота" data-price="10900"
+            data-image="Images/Catalogue_items/k2.jpg">
+            <div class="card_content">
+              <img src="Images/Catalogue_items/k2.jpg" alt="Изображение украшения">
+              <p class="name">Колье из золота</p>
+              <p class="price">10 900 ₽</p>
+              <button class="button" onclick="addToCart(this)">Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="card" data-type="Кольца" data-name="Кольцо из золота" data-price="46400"
+            data-image="Images/Catalogue_items/r6.jpg">
+            <div class="card_content">
+              <img src="Images/Catalogue_items/r6.jpg" alt="Изображение украшения">
+              <p class="name">Кольцо из золота</p>
+              <p class="price">46 400 ₽</p>
+              <button class="button" onclick="addToCart(this)">Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="card" data-type="Кольца" data-name="Кольцо из золота" data-price="23200"
+            data-image="Images/Catalogue_items/r7.jpg">
+            <div class="card_content">
+              <img src="Images/Catalogue_items/r7.jpg" alt="Изображение украшения">
+              <p class="name">Кольцо из золота</p>
+              <p class="price">23 200 ₽</p>
+              <button class="button" onclick="addToCart(this)">Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="card" data-type="Колье" data-name="Колье из золота" data-price="45500"
+            data-image="Images/Catalogue_items/k3.jpeg">
+            <div class="card_content">
+              <img src="Images/Catalogue_items/k3.jpeg" alt="Изображение украшения">
+              <p class="name">Колье из золота</p>
+              <p class="price">45 500 ₽</p>
+              <button class="button" onclick="addToCart(this)">Добавить в корзину</button>
+            </div>
+          </div>
+          <div class="card" data-type="Серьги" data-name="Серьги из серебра" data-price="14370"
+            data-image="Images/Catalogue_items/s9.jpg">
+            <div class="card_content">
+              <img src="Images/Catalogue_items/s9.jpg" alt="Изображение украшения">
+              <p class="name">Серьги из серебра</p>
+              <p class="price">14 370 ₽</p>
+              <button class="button" onclick="addToCart(this)">Добавить в корзину</button>
+            </div>
+          </div>
+        </div>
+        <div class="pagination" id="pagination">
+          <button class="btn1" onclick="prevbtn()"><img src="Images/arrow.png"
+              alt="Изображение стрелки налево"></button>
+          <ul>
+            <li class="link active" value="1" onclick="activeLink(event)">1</li>
+            <li class="link" value="2" onclick="activeLink(event)">2</li>
+            <li class="link" value="3" onclick="activeLink(event)">3</li>
+          </ul>
+          <button class="btn2" onclick="nextbtn()"><img src="Images/arrow.png"
+              alt="Изображение стрелки направо"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer_container">
+      <div class="sec">
+        <h3>ИНФОРМАЦИЯ</h3>
+        <ul>
+          <li><a href="catalogue.html">Каталог</a></li>
+          <li><a href="sales.html">Акции</a></li>
+          <li><a href="aboutus.html">О компании</a></li>
+        </ul>
+      </div>
+      <div class="sec">
+        <h3>СВЯЖИТЕСЬ С НАМИ</h3>
+        <ul class="info">
+          <li>
+            <p><span><i class="fa fa-map-marker" aria-hidden="true"></i></span> 14 Tverskaya Street<br>Moscow, Russia
+            </p>
+          </li>
+          <li>
+            <p><span><i class="fa fa-phone" aria-hidden="true"></i></span><a href="tel:+79259914090"> +7 (925) 991
+                40-90</a>
+            </p>
+          </li>
+          <li>
+            <p><span><i class="fa fa-envelope" aria-hidden="true"></i></span><a href="mailto:cyralen@gmail.com">
+                cyralen@gmail.com</a></p>
+          </li>
+        </ul>
+      </div>
+      <div class="sec">
+        <h3>МЫ В СОЦСЕТЯХ:</h3>
+        <div class="social_links">
+          <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+          <a href="https://t.me/renarill"><i class="fab fa-telegram"></i></a>
+          <a href="https://vk.com/renarill"><i class="fab fa-vk"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © Кириллова А.В., 3 семестр, для МИРЭА 2023.</p>
+    </div>
+  </footer>
+  <script src="js/burger_script.js"></script>
+  <script src="js/pagination.js"></script>
+  <script src="js/addToCart.js"></script>
+</body>
+
+</html>

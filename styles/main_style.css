@@ -1,0 +1,320 @@
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 881px;
+    padding: 0 8%;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.6)), url(../Images/img1l.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.introduction h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: white;
+    text-shadow: 1px 2px gray;
+}
+
+.introduction p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: white;
+    text-shadow: 1px 1px gray;
+    padding-top: 4%;
+}
+
+.button {
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    width: 315px;
+    height: 87px;
+    margin-top: 3%;
+}
+
+.sales {
+    background-color: var(--color-beige);
+    background-size: 535px 100%;
+}
+
+.sales h3,
+.description,
+.sales-banner {
+    margin: 0 15%;
+}
+
+.sales h3,
+.categories h3 {
+    font-size: 2.7rem;
+    font-weight: 600;
+    line-height: 1.2;
+    padding-top: 9%;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-right: 30%;
+}
+
+#dot {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.dot {
+    display: inline-block;
+    border-radius: 50%;
+    background: #d3d3d3;
+    padding: 1%;
+    margin: 1% 0.5%;
+}
+
+.dot.active {
+    background: black;
+}
+
+.sales-banner {
+    position: relative;
+    width: 70%;
+    height: auto;
+}
+
+.sales-banner img {
+    width: 100%;
+    height: auto;
+}
+
+.text-banner {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2%;
+    text-align: center;
+}
+
+.text-banner p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 2% 5%;
+}
+
+.text-banner .note {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: end;
+}
+
+.text-banner .button {
+    font-size: 1.2rem;
+    width: 280px;
+    height: 70px;
+    margin: 0 1.5%;
+}
+
+.categories {
+    padding: 0 4%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.category {
+    display: flex;
+    padding-top: 6%;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.cat {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2% 8%;
+}
+
+.cat p {
+    font-size: 2.1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.category1,
+.category2 {
+    max-width: 450px;
+}
+
+.category1 {
+    margin-right: 10%;
+}
+
+.category .descript {
+    font-size: 1.2rem;
+    padding-top: 2%;
+    padding-bottom: 1.8%;
+}
+
+
+@media (max-width: 1150px) {
+    .introduction {
+        height: 505px;
+        padding: 0 5%;
+    }
+
+    .introduction h1 {
+        font-size: 3.6rem;
+        text-shadow: 1px 2px gray;
+    }
+
+    .introduction p {
+        font-size: 1.2rem;
+        text-shadow: 1px 1px gray;
+        padding-top: 4%;
+    }
+
+    .button {
+        font-size: 1.1rem;
+        width: 252px;
+        height: 70px;
+        margin: 3% 0;
+    }
+
+    .sales h3 {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .text-banner {
+        padding: 0.6rem;
+    }
+
+    .text-banner p {
+        font-size: 0.8rem;
+        padding-right: 0;
+        padding-left: 0;
+        padding-top: 1%;
+        padding-bottom: 0;
+    }
+
+    .text-banner .note {
+        font-size: 0.6rem;
+    }
+
+    .text-banner .button {
+        font-size: 0.8rem;
+        width: 180px;
+        height: 40px;
+        margin-top: 0.5%;
+    }
+
+    .category {
+        justify-content: center;
+    }
+
+    .categories h3 {
+        font-size: 1.5rem;
+    }
+
+
+    .image-container img {
+        display: block;
+        max-width: 75%;
+    }
+
+    .cat {
+        position: absolute;
+        bottom: 0;
+        right: 25%;
+        padding: 2% 10%;
+    }
+
+    .cat p {
+        font-size: 1.2rem;
+    }
+
+    .category1 {
+        margin-right: 0;
+
+    }
+
+    .category .descript {
+        max-width: 300px;
+        font-size: 0.8rem;
+        padding-top: 2%;
+        padding-bottom: 1.8%;
+    }
+}
+
+@media (max-width: 600px) {
+    .introduction {
+        height: 500px;
+        padding: 0 5%;
+    }
+
+    .introduction h1 {
+        font-size: 2.2rem;
+        text-shadow: 1px 2px gray;
+    }
+
+    .introduction p {
+        font-size: 1.1rem;
+        text-shadow: 1px 1px gray;
+        padding-top: 4%;
+    }
+
+    .button {
+        font-size: 1.1rem;
+        width: 220px;
+        height: 60px;
+        margin-top: 3%;
+    }
+
+    .sales h3 {
+        font-size: 1.1rem;
+    }
+
+    .description {
+        font-size: 0.7rem;
+    }
+
+    .text-banner {
+        width: 80%;
+    }
+
+    .text-banner p {
+        font-size: 0.7rem;
+    }
+
+    .text-banner .note {
+        font-size: 0.5rem;
+    }
+
+    .text-banner .button {
+        font-size: 0.5rem;
+        width: 130px;
+        height: 26px;
+    }
+}

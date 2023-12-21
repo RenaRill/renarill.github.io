@@ -1,0 +1,86 @@
+body::before {
+    content: "";
+    display: block;
+    height: 241px;
+    width: 100%;
+    background-color: var(--color-beige);
+    position: absolute;
+    top: 173px;
+    left: 0;
+    z-index: -1;
+}
+.aboutus_body {
+    margin-left: 16%;
+    margin-right: 6%;
+}
+h2 {
+    font-family: Cormorant;
+}
+p {
+    font-family: Montserrat, sans-serif;
+}
+.aboutus_body .path {
+    font-size: 1rem;
+    margin-bottom: 0.5%;
+}
+.aboutus_body .path a {
+    text-decoration: none;
+    color: gray;
+}
+.aboutus_body h2 {
+    font-size: 2rem;
+    margin-bottom: 2.5%;
+}
+.aboutus_body p {
+    font-size: 1rem;
+    padding-right: 30%;
+    padding-bottom: 3%;
+}
+.aboutintro {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.aboutus_body img {
+    margin-bottom: 5%;
+    max-width: 100%;
+    height: auto;
+}
+
+.page-notification {
+    height: auto;
+    width: 55%;
+    margin: auto;
+    padding: 1.5rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-top: solid 4px #967759;
+    background-color: #f8f6f4;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+    z-index: 1000;
+  }
+  
+  @keyframes appear {
+   0%   {opacity: 0%; bottom:-24px;}
+   100%   {opacity: 100%; bottom: 0px;}
+  }
+  .page-notification .close-button {
+    cursor: pointer;
+    float: right;
+}
+
+@media (max-width: 600px) {
+    body::before {
+        top: 150px;
+    }
+    .aboutus_body h2 {
+        font-size: 1.5rem;
+    }
+    .aboutus_body p,
+    .page-notification {
+        font-size: 0.8rem;
+    }
+}

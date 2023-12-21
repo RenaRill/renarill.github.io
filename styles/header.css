@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+}
+:root {
+    --color-beige: #f2f0ee;
+
+}
+h1, h2, h3 {
+    font-family: Cormorant;
+}
+p, a, button {
+    font-family: Montserrat, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 61px 3% 50px 3%;
+    flex-wrap: nowrap;
+}
+
+.logo {
+    width: 134px;
+    height: 79px;
+}
+
+header .menu ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding-left: 50px;
+}
+
+header .menu li {
+    list-style: none;
+    margin-right: 54px;
+}
+
+header .menu li a,
+.contact a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: black;
+}
+
+.menu-icons {
+    margin-left: 18px;
+}
+
+.menu-icons img {
+    padding-right: 10px;
+}
+
+.menu-link {
+    transition: 0.7s ease;
+}
+.contact {
+    padding-left: 3.5%;
+}
+
+@media (max-width: 1150px) {
+    .menu {
+        display: none;
+        position: absolute;
+        top: 170px;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .menu li {
+        margin: 15px 0;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-icons {
+        margin-left: 5.5%;
+    }
+
+}
+
+@media (max-width: 600px) {
+    header {
+        padding-top: 30px;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 130px;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li {
+        margin: 15px 0;
+        flex-direction: row;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-icons {
+        margin-left: 10%;
+    }
+
+    .menu-icons img {
+        padding-right: 13px;
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .logo {
+        width: auto;
+        height: auto;
+    }
+
+    .logo img {
+        width: 90px;
+        height: auto;
+    }
+
+    .icon {
+        width: 23px;
+        height: 23px;
+    }
+}

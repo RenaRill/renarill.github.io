@@ -1,0 +1,133 @@
+header, .sbanner, .sales_intro, .sales_body {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.sales_body {
+    display: grid;
+    grid-template-areas: 
+    "first first"
+    "second third";
+}
+
+.sales_intro .path {
+    font-size: 1rem;
+    margin: 4.5% 0 4% 0;
+}
+.sales_intro .path a {
+    text-decoration: none;
+    color: gray;
+}
+.sales_intro h2 {
+    font-size: 2.1rem;
+    margin-bottom: 3%;
+}
+.sales_intro p {
+    font-size: 1.1rem;
+    padding-right: 50%;
+    margin-bottom: 8%;
+}
+.sales_body p {
+    font-size: 1.4em;
+    font-weight: 600;
+    line-height: 1.5;
+    padding-top: 3%;
+    padding-bottom: 4%;
+}
+.s1 {
+    grid-area: first;
+}
+.s2 {
+    grid-area: second;
+}
+.s3 {
+    grid-area: third;
+}
+.s1 img {
+    width: 1150px;
+    height: auto;
+}
+.s2 img, 
+.s3 img {
+    width: 565px;
+    height: auto;
+}
+.button {
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    width: 315px;
+    height: 87px;
+    margin-bottom: 6%;
+}
+
+@media (max-width: 1150px) {
+    header, .sbanner, .sales_intro, .sales_body {
+        width: 600px;
+        margin: 0 auto;
+    }
+    .s1 img,
+    .sbanner img {
+        width: 600px;
+        height: auto;
+    }
+    .s2 img, 
+    .s3 img {
+        width: 290px;
+        height: auto;
+    }
+    
+    .sales_intro h2 {
+        font-size: 1.4rem;
+    }
+    .sales_intro p {
+        font-size: 0.8rem;
+    }
+    .sales_body p {
+        font-size: 1.1rem;
+    }
+    .button {
+        font-size: 0.8rem;
+        width: 180px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    header, .sbanner, .sales_intro, .sales_body {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .sales_intro .path {
+        font-size: 0.6rem;
+    }
+    .s1 img,
+    .sbanner img {
+        width: 300px;
+        height: auto;
+    }
+    .s2 img, 
+    .s3 img {
+        width: 140px;
+        height: auto;
+    }
+    .sales_intro h2 {
+        font-size: 1.1rem;
+    }
+    .sales_intro p {
+        font-size: 0.6rem;
+        padding-right: 20%;
+    }
+    .sales_body p {
+        font-size: 0.6rem;
+        padding-right: 10%;
+        padding-bottom: 0;
+    }
+    .button {
+        font-size: 0.7rem;
+        width: 140px;
+        height: 30px;
+    }
+}
