@@ -204,8 +204,8 @@
   }
 
   .pagination ul li {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     font-size: 1.1rem;
     margin: 0 2px;
   }
@@ -213,7 +213,7 @@
   .btn1 img,
   .btn2 img {
     width: 24px;
-    margin: 0 10px;
+    margin: 0 3px;
   }
 
   .buttons {
